@@ -1,3 +1,10 @@
+## 4.4 (2026-10-10)
+### Fixed
+- `first_fw_version()` reported 1.00 for datapoint 208, which the manual lists
+  under "IDs 192-208 are usable from FW1.50"; the bound was one short. Now that
+  the integration filters entities by firmware version this decides whether the
+  datapoint gets an entity at all
+
 ## 4.3 (2026-10-10)
 ### Added
 - decode the BM-2 appliance type datapoints (IDs 357/359/360/361) via the new
